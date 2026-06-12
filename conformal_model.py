@@ -75,3 +75,11 @@ for i in range(10): # Let's look at the first 10 packets
         uncertain_count += 1
 
 print(f"\nTotal packets flagged for Human Review (Set size > 1) in first 10: {uncertain_count}")
+
+from sklearn.metrics import classification_report, confusion_matrix
+
+print("Confusion Matrix:")
+print(confusion_matrix(y_test, model.predict(X_test)))
+
+print("\nClassification Report:")
+print(classification_report(y_test, model.predict(X_test)))

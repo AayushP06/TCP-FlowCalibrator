@@ -1,2 +1,4 @@
-network_features.csv
-syn_flood_capture.pcap
+.venv/
+__pycache__/
+data/
+
